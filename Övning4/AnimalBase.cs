@@ -1,4 +1,4 @@
-﻿namespace Övning4
+﻿namespace Övning3
 {
     public abstract class AnimalBase
     {

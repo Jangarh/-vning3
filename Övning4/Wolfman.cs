@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Övning4
+namespace Övning3
 {
     internal class Wolfman : Wolf, IPerson
     {
