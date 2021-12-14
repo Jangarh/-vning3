@@ -8,18 +8,20 @@ namespace Övning3
 {
     internal class Horse : Animal
     {
-        public Horse(string name, int age, double weight) : base(name, age, weight)
+        public string Breed { get; set; }
+        public Horse(string name, int age, double weight, string breed) : base(name, age, weight)
         {
+            Breed = breed;
         }
 
         public override string Stats()
         {
-            throw new NotImplementedException();
+            return base.Stats() + $" The breed is: {Breed}.";
         }
 
-        public override string ToString()
+        public override void DoSound()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("*Gnägg  Gnägg*");
         }
     }
 }

@@ -14,6 +14,12 @@ namespace Övning3
         private double height;
         private double weight;
 
+        public Person(string fname, string lname)
+        {
+            fName = fname;
+            lName = lname;
+        }
+
         public Person(int age, string fName, string lName, double height, double weight)
         {
             Age = age;
@@ -27,14 +33,21 @@ namespace Övning3
         { get => age;
           set 
           { 
-                if(value <= 0) 
-                { throw new ArgumentException(nameof(age), "Age cannot be 0") ; }
-                else { age = value; }
+                if(value < 1) 
+                { 
+                    throw new ArgumentException(nameof(age), "Person must be at least one year old!") ; 
+                }
+                age = value; 
           }
         
         
         }
-        
+
+        internal void PrintPersonInfo()
+        {
+            throw new NotImplementedException();
+        }
+
         public string FName
         {
             get => fName;

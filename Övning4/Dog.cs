@@ -8,13 +8,15 @@ namespace Övning3
 {
     public class Dog : Animal
     {
-        public Dog(string name, int age, double weight) : base(name, age, weight)
+        public string Tail { get; set; }
+        public Dog(string name, int age, double weight, string tail) : base(name, age, weight)
         {
-        }
+            Tail = tail;
+         }
 
-        public override string ToString()
+        public override void DoSound()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("*kvitter kvitter*");
         }
 
         public string ThisString()
@@ -24,7 +26,7 @@ namespace Övning3
 
         public override string Stats()
         {
-            throw new NotImplementedException();
+            return base.Stats() + $"This dog has a beautiful {Tail} I noticed";
         }
     }
     

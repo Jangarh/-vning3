@@ -14,12 +14,11 @@ namespace Övning3
 
         public override string Stats()
         {
-            throw new NotImplementedException();
+            return base.Stats() + $" It has a beautiful {Name} name.";
         }
-
-        public override string ToString()
+        public override void DoSound()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("*No way to know how it sound*");
         }
     }
 }

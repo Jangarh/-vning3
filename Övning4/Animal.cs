@@ -40,43 +40,15 @@ namespace Övning3
 
 
 
-        public static string DoSound()
+        public abstract void DoSound();
+      
+
+      // public abstract string ToString();
+
+        public virtual string Stats()
         {
-            return "";
-
- 
-
-          //switch (Animal) {
-          //    case 'Bird':
-          //        Console.WriteLine("Bird sound");
-          //        break;
-          //    case 'Dog':
-          //        Console.WriteLine("Dog sound");
-          //        break;
-          //    case Hedgehog:
-          //        Console.WriteLine("Hedgehog sound");
-          //        break;
-          //    case 'Horse':
-          //        Console.WriteLine("Horse sound");
-          //        break;
-          //    case 'Wolf':
-          //        Console.WriteLine("Wolf sound");
-          //        break;
-          //    case 'Worm':
-          //        Console.WriteLine("Worm sound");
-          //        break;
-          //        default:
-          //    case 'Dog':
-          //        Console.WriteLine("No animail were selected.");
-          //        break;
-          //}
-                
-
+            return $"This animals name is {Name}. It is {Age} years old and has {Weight} of weight.";
         }
-
-        public abstract string ToString();
-
-        public abstract string Stats();
        
     }
 

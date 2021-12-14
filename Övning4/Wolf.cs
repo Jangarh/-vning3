@@ -12,14 +12,15 @@ namespace Övning3
         {
         }
 
+        public override void DoSound()
+        {
+            Console.WriteLine("*awoooo  awoooo*");
+        }
+
         public override string Stats()
         {
             throw new NotImplementedException();
         }
-
-        public override string ToString()
-        {
-            throw new NotImplementedException();
-        }
+       
     }
 }
